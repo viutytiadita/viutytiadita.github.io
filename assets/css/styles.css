@@ -3,14 +3,6 @@
   padding:10px;
 }
 
-#promo .jumbotron{
-  border-radius:20px;
-  padding:40px;
-  background-color:rgba(255,255,255,0.75);
-  max-width:800px;
-  margin:0 auto;
-}
-
 body{
   margin:0;
   font-family:comic-sans;
@@ -105,9 +97,4 @@ header{
   padding:20px;
 }
 
-div.col-md-4{
-}
-
-p.text-center{
-}
 
