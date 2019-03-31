@@ -1,0 +1,77 @@
+.navbar{ background: transparent; position: fixed;}
+.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+.nav-link{ margin-right: 1em !important;}
+.nav-link:hover{ background: #FFFAFA; color: #FD1E68; }
+.navbar-collapse{ justify-content: flex-end;}
+.navbar-toggler{  background:#fff !important;}
+
+.header{
+   background-image: url('../image/scale.jpg');
+   background-attachment: relative;
+   background-size: cover;
+   background-position: center;
+   padding-top: 8em !important;
+}
+
+.card{
+    background:rgba(255,255,255, 0.6);
+}
+.container{
+    text-align: center;
+    padding-bottom: 5em;
+}
+
+.inputForm{
+    width: 30em;
+    height: 3em;
+    border-radius: 10px;
+    border-width: 0px;
+    padding-left: 20px;
+
+}
+
+.inputForm{
+    width: 30em;
+    height: 3em;
+    border-radius: 10px;
+    border-width: 0px;
+    padding-left: 20px;
+
+}
+
+
+
+
+.formGroup{
+    padding: 10px;
+}
+
+
+.footer{
+    background-color:  rgb(104, 4, 37);
+    height: 4em;
+    color: #FFFAFA;
+    padding-left: 3em;
+    padding-top: 20px;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color:  rgb(104, 4, 37);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px rgba(255, 0, 0, 0.8);
+  outline: 0 none;
+}

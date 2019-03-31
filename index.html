@@ -1,114 +1,88 @@
-<!DOCTYPE html>
 <html>
+  <head>
+  	<title>Bisa Kamu Ubah Sendiri</title>
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+  	<link rel="stylesheet" type="text/css" href="css/main.css">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" >
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viuty Tiadita</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    
-</head>
+  <body>
+  	<nav class="navbar navbar-expand-lg fixed-top ">  
+    	<a class="navbar-brand" href="#"><i class="fas fa-weight"></i> Calculator Body-Weight</a>
+    	<span class="navbar-toggler-icon"></span>
+    	</button>
+	    <div class="collapse navbar-collapse " id="navbarSupportedContent">     
+		    <ul class="navbar-nav mr-4">
+		    	<li class="nav-item">
+		    		<a class="nav-link" data-value="about" href="#">About</a>        
+		      </li>  
+		    	<li class="nav-item"> 
+		      		<a class="nav-link " data-value="blog" href="#">Blog</a>         
+		      </li>   
+		      <li class="nav-item"> 
+		      		<a class="nav-link " data-value="contact" href="#">Contact</a>       
+		    </li> 
+		    </ul> 
+	    </div>
+	</nav>
 
-<body>
-    <header><img class="img-circle" src="assets/img/viuty.jpg">
-        <h1 class="text-muted"><strong>Viuty Tiadita</strong></h1>
-        <p>ITDP CIMB Niaga 2019</p>
+    <header class="header">
+      <div class="container">
+          <div class="card">
+              <h5 class="card-header">Welcome</h5>
+              <div class="card-body">
+                <h5 class="card-title"> Calculate your BMI</h5>
+                <p class="card-text">
+                  <form>
+                      <div class="formGroup">
+                          <label for="gender">Choose your gender</label><br>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                              <label class="form-check-label" for="inlineRadio1"><img src="https://img.icons8.com/color/96/000000/person-male.png"></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                              <label class="form-check-label" for="inlineRadio2"><img src="https://img.icons8.com/color/96/000000/businesswoman.png"></label>
+                            </div>
+ 
+                      </div>
+                      
+                      <div class="formGroup">
+                          <label for="height">Your Height </label><br>
+                          <input class="inputForm" type="number" id="height" placeholder="cm">
+                      </div>
+                      <div class="formGroup">
+                          <label for="weight">Your Weight </label><br>
+                          <input class="inputForm" type="number" id="weight" placeholder="kg">
+                      </div>
+                  </form>
+                </p>
+                <a href="#" class="btn btn-primary">Calculate</a>
+              </div>
+            </div>
+
+            <section id="output">
+            	
+
+            </section>
+            <!--<div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">Well done!</h4>
+                <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                <hr>
+                <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+              </div>-->
+      </div>
     </header>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand navbar-link" href="#"> <i class="glyphicon glyphicon-apple"></i> Viuty's Profiile</a>
-                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            </div>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active" role="presentation"><a href="#">Home </a></li>
-                    <li role="presentation"><a href="#">Galery </a></li>
-                    <li role="presentation"><a href="#">Contact </a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div id="promo">
-        <h1 class="text-left">Identity </h1></div>
-    <div class="container">
-        <p class="lead text-left">Full name : Viuty Tiadita<br>Date of birth : December 6th, 1995<br>Address : Palembang, South Sumatera<br>Status : Single<br>Education : Bachelor's Degree<br>Major : Computer Science </p>
-    </div>
-    <div id="reason">
-        <div class="container style2">
-            <h1 class="text-center">Who is She</h1>
-            <div class="row">
-                <div class="col-md-4 item1"><i class="fa fa-birthday-cake"></i>
-                    <h2 class="text-center">Introvert </h2>
-                    <p>She is an introvert. She needs her time alone to gain energy back. She doesn't speak a lot but she's totally nice with other people. Just talk to her first! </p>
-                </div>
-                <div class="col-md-4 item1"><i class="fa fa-heart"></i>
-                    <h2 class="text-center">Lovely</h2>
-                    <p>She is a lovely one. She loves pink, flower, and pretty dress. </p>
-                </div>
-                <div class="col-md-4 item1"><i class="fa fa-hand-peace-o"></i>
-                    <h2 class="text-center">Cute </h2>
-                    <p>She loves to hear if someone says to her, "You're cute!". </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <h1 class="text-center">Gallery </h1>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="IMG20180629145756.jpg"><img src="assets/img/IMG20180629145756.jpg" width="280"></a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="IMG20170909114815.jpg"><img src="assets/img/IMG20170909114815.jpg" width="280"></a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <a href="IMG20171129162801.jpg"><img src="assets/img/IMG20171129162801.jpg" width="280"></a>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <nav>
-                    <ul class="pagination">
-                        <li><a aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                        <li class="active"><a>1</a></li>
-                        <li><a>2</a></li>
-                        <li><a>3</a></li>
-                        <li><a>4</a></li>
-                        <li><a>5</a></li>
-                        <li><a aria-label="Next"><span aria-hidden="true">»</span></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
+    
     <footer>
-        <div class="container footer">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>Viuty Tiadita</h2>
-                    <p>Software Engineering</p>
-                    <p><strong>viuty's profile </strong><i class="glyphicon glyphicon-copyright-mark"></i><strong> 201</strong>9</p>
-                </div>
-                <div class="col-md-4">
-                    <p class="text-center"> </p>
-                    <p class="text-center"> </p>
-                </div>
-                <div class="col-md-4">
-                    <h3 class="text-center"><strong>Follow Me</strong></h3>
-                    <p class="text-center"><i class="fa fa-instagram"></i> @viutytiadita</p>
-                </div>
-            </div>
-        </div>
+      <div class="footer">
+        <a>Viuty Tiadita <i class="fas fa-copyright"></i> 2019</a>
+      </div>
     </footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
-
+    
+    <script src="js/script-calculation.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  </body>
 </html>
