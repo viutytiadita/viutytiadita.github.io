@@ -1,37 +1,34 @@
 function tampil(output,output2){
     var sectionOutput = document.getElementById("output");
-    var mainDiv = document.createElement('div')
     var title = document.createElement('div')
     var h4 = document.createElement('h4')
     var h3 = document.createElement('h3')
     var p = document.createElement('p')
-    var hr = document.createElement('br')
 
     h4.setAttribute("class","alert-heading");
-    var h4Result = document.createTextNode(output2)
+    var h3Text = document.createTextNode(output2)
     var h4Text = document.createTextNode(output);
-    h4.appendChild(h4Result)
-    h4.appendChild(h4Text);
-    h4.appendChild(hr)
+    h4.appendChild(h3Text)
+    h3.appendChild(h4Text);
     var p1Text = document.createTextNode("Achieve a healthy weight by balancing your caloric input (diet) and output (physical activity).")
     p.appendChild(p1Text)
     p.setAttribute("class","mb-0");
-    var pText = document.createTextNode(" A BMI value of 23 and above indicates that your weight is outside of the healthy weight range for your height. Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.");
+    var pText = document.createTextNode(" A BMI value of 25 and above indicates that your weight is outside of the healthy weight range for your height. Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.");
     p.appendChild(pText)
 
-
-    title.setAttribute("class","alert alert-success")
+    title.setAttribute("class","alert alert-secondary")
     title.setAttribute("role","alert")
     title.appendChild(h4);
+    title.appendChild(h3)
     title.appendChild(p)
-    mainDiv.setAttribute("class","container");
-    mainDiv.appendChild(title)
-
-    sectionOutput.appendChild(mainDiv)
-
+    
+    sectionOutput.appendChild(title)
 
 }
 
+function resetFunction() {
+    document.getElementById("myForm").reset();
+}
 
 var button = document.getElementsByClassName("btn btn-primary");
 button[0].addEventListener('click',function(){
@@ -80,4 +77,5 @@ button[0].addEventListener('click',function(){
     }
 
     tampil(output,output2);
+    resetFunction();
 })
